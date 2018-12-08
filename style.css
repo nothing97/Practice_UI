@@ -1,0 +1,225 @@
+/*==Reset CSS==*/
+* { margin: 0; padding: 0;}
+
+/*==Style cơ bản cho website==*/
+body { font-family: sans-serif; color: #333; }
+
+/*==Style cho menu===*/
+#menu ul { background: #545dd6; list-style-type: none; /*padding-left: 5px*/; }
+
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 125px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  border-right: 1px solid lightslategrey;
+}
+#menu a:hover { background: #F1F1F1; color: #333;}
+
+/*==Dropdown Menu==*/
+.sub-menu { display: none; position: absolute;}
+
+#menu li { position: relative; }
+#menu li:hover .sub-menu { display: block; }
+.sub-menu li { margin-left: 0 !important; }
+
+/*==Menu cấp 3==*/
+.sub-menu > ul { display: none !mportant; }
+
+.container { border: 1px solid red; padding: 0px; }
+
+img { max-width: 100%; width: 1168px; height: 110px; border-radius: 10px;
+    outline: none;}
+
+/*css cho content*/
+
+/*==Thiết lập container==*/
+.container {
+  width: 1000px;
+  border: 1px solid #9e9090;
+  box-shadow: 10px 10px lightgrey;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#product {
+  width: 238px;
+  height: 613px;
+  background: #e8e8e8;
+  float: left;
+  border: 1px solid lightslategrey;
+}
+
+#content_product {
+  width: 760px;
+  height: 613px;
+  background: #e6c548;
+  float: right;
+}
+
+div#content {/* margin-top: -10px;*/ }
+
+img.img_banner {
+    border-radius: 0px;
+}
+
+.category_product {
+    background: #0da28f;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a.active { background: orangered; }
+
+.name_product {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px 20px 0px;
+        border-bottom: 1px solid palevioletred;
+}
+
+.footer {
+    background: #575858;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+span.info_web { position: relative; top: 7px; }
+
+input[type="text"] {
+    float: right;
+    margin: 7px 40px 0px 0px;
+    border-radius: 15px;
+    outline: none;
+    border-color: #f5b9a3;
+}
+
+.product {
+    float: left;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #3ece3e;
+    color: white;
+    width: 760px;
+    text-align: center;
+}
+
+.list_product {
+    width: 140px;
+    float: left;
+    margin: 20px 20px 0px 30px;
+}
+
+p.ten_sp {
+  padding-top: 10px;
+    color: white;
+  font-size: 16px;
+    font-weight: bold;
+}
+
+b.price {
+    color: #d80707;
+}
+
+.info_product {
+    margin-bottom: 20px;
+}
+
+.info_product:hover {
+  transform: scale(1.1);
+}
+
+input[type="submit"] {
+    float: right;
+    position: relative;
+    left: 174px;
+    top: 5px;
+    border-radius: 14px;
+    padding: 2px;
+        outline: none;
+    border-color: #f79c9c;
+}
+
+div#menu {
+    width: 993px;
+    position: relative;
+    left: 5px;
+}
+
+#menu li {
+    position: relative;
+    border-bottom: 1px solid grey;
+}
+
+.maytinh:hover {
+    background: orange ; 
+    color: white !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+img.icon_home, .icon_computer, .icon_login, .icon_contact {
+    width: 20px;
+    height: 16px;
+}
+
+/*Responsive*/
+@media (max-width: 414px){
+
+}
+
+/*Style trang chi tiết sp*/
+.info_product_left {
+    float: left;
+    width: 220px;
+    background: #e875ef;
+    padding: 17px 30px 0px;
+}
+
+.info_product_right {
+    float: right;
+    background: #64648a;
+    color: white;
+    padding: 5px;
+    width: 540px;
+}
+
+h4.describe_product {
+    text-align: center;
+    background: red;
+    padding: 5px;
+    margin: -5px;
+}
+
+.info_describe_left {
+    float: left;
+    width: 215px;
+    margin: 15px 0px 25px 40px;
+}
+
+.info_describe_right {
+    float: right;
+    width: 235px;
+    margin: 15px 20px;
+}
+
